@@ -31,9 +31,9 @@
             <ComboBox x:Name="uiFontFamily"/>
             <Label Content="Rozmiar:"/>
             <ComboBox x:Name="uiFontSize"/>
-            <Button x:Name="uiBtnClear" Content="Wyczyść" Margin="0,5,0,0"/>
             <CheckBox x:Name="uiExchange" Content="Zamień" IsChecked="False" Margin="0,5,0,0" />
             <Button x:Name="uiBtnSave" Content="Zapisz" Margin="0,5,0,0"/>
+            <Button x:Name="uiBtnDelete" Content="Usuń" Margin="0,5,0,0"/>
         </StackPanel>
         <Border BorderThickness="2" BorderBrush="Gray" Grid.Column="1" Grid.Row="0">
         <ScrollViewer HorizontalScrollBarVisibility="Auto"  ClipToBounds="True">

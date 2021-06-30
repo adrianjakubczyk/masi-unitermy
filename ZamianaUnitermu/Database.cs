@@ -45,7 +45,7 @@ namespace ZamianaUnitermu
                 MessageBox.Show(ex.Message);
             }
         }
-        public DataRowCollection ExecuteQuery(string query)
+        public DataRowCollection Query(string query)
         {
             DataTable tab = new DataTable();
 
@@ -56,6 +56,28 @@ namespace ZamianaUnitermu
                 SqlDataAdapter ad = new SqlDataAdapter(query, _connection);
 
                 ad.Fill(tab);
+            }
+            else
+            {
+                MessageBox.Show("Nie można połączyć się z bazą daych");
+            }
+
+            this.Disconnect();
+
+            return tab.Rows;
+        }
+
+        public DataRowCollection Execute(string query)
+        {
+            DataTable tab = new DataTable();
+
+            this.Connect();
+
+            if (_connection.State == ConnectionState.Open)
+            {
+                SqlCommand cmd = new SqlCommand(query, _connection);
+
+                cmd.ExecuteNonQuery();
             }
             else
             {
