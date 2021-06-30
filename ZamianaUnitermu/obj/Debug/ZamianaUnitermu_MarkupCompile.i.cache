@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Adrian\Dev\masi\ZamianaUnitermu\ZamianaUnitermu\obj\Debug\
+C:\Adrian\Dev\masi-unitermy\ZamianaUnitermu\obj\Debug\
 ZamianaUnitermu
 none
 false
 DEBUG;TRACE
-C:\Adrian\Dev\masi\ZamianaUnitermu\ZamianaUnitermu\App.xaml
-11151548125
+C:\Adrian\Dev\masi-unitermy\ZamianaUnitermu\App.xaml
+3-709385160
 
-9-1663214550
+10-1341330734
 13-1505183044
-MainWindow.xaml;
+AddCycle.xaml;AddElimination.xaml;MainWindow.xaml;
 
-True
+False
 

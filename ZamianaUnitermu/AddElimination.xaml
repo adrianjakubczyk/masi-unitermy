@@ -1,0 +1,38 @@
+﻿<Window x:Class="ZamianaUnitermu.AddElimination"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZamianaUnitermu"
+        mc:Ignorable="d"
+        Title="Pozioma operacja eliminowania" Height="200" Width="300"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        ShowInTaskbar="False"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="A:" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <TextBox x:Name="euiA" Grid.Row="0" Grid.Column="1" Height="20" Margin="5,0,5,0"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="B:" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <TextBox x:Name="euiB" Grid.Row="1" Grid.Column="1" Height="20" Margin="5,0,5,0"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Warunek:" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <TextBox x:Name="euiCondition" Grid.Row="2" Grid.Column="1" Height="20" Margin="5,0,5,0"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Operacja:" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <ComboBox x:Name="euiOperation" Grid.Row="3" Grid.Column="1" Margin="5,0,5,0" Height="20">
+            <ComboBoxItem Content=";" IsSelected="True"/>
+            <ComboBoxItem Content=","/>
+        </ComboBox>
+        <Button x:Name="euiBtnAdd" Grid.Row="4" Grid.ColumnSpan="2" Content="Dodaj" Margin="5,5,5,5" Click="cuiBtinAdd_Click"/>
+    </Grid>
+</Window>
