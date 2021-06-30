@@ -31,10 +31,12 @@ namespace ZamianaUnitermu
         {
             foreach (FontFamily f in Fonts.SystemFontFamilies)
             {
+
                 uiFontFamily.Items.Add(f);
             }
             if (uiFontFamily.Items.Count > 0)
-                uiFontFamily.SelectedIndex = 0;
+                uiFontFamily.SelectedIndex = uiFontFamily.Items.IndexOf(new FontFamily("Arial"));
+
 
             for (int i = 8; i <= 40; i++)
             {
@@ -58,8 +60,8 @@ namespace ZamianaUnitermu
             uiCanvas.Children.Add(_drawing);
 
 
-            uiBtnNew.Click += ClearCanvas;
-            uiBtnCycle.Click += DrawBlueCanvas;
+            uiBtnNew.Click += Clear;
+            uiBtnClear.Click += Clear;
             uiBtnCycle.Click += AddCycleUniterm;
             uiBtnElimination.Click += AddEliminationUniterm;
 
@@ -82,7 +84,7 @@ namespace ZamianaUnitermu
                 }
                 else
                 {
-                    MessageBox.Show("Zmienna jest za długa");
+                    MessageBox.Show("Zmienna: nie podano lub jest za długa");
                 }
 
                 string operation = addCycleWindow.cuiOperation.Text;
@@ -92,8 +94,9 @@ namespace ZamianaUnitermu
                 }
                 else
                 {
-                    MessageBox.Show("Operacja jest za długa");
+                    MessageBox.Show("Operacja: nie podano lub jest za długa");
                 }
+                UpdateCanvas(sender, e);
             }
         }
         private void AddEliminationUniterm(object sender, RoutedEventArgs e)
@@ -110,17 +113,17 @@ namespace ZamianaUnitermu
                 }
                 else
                 {
-                    MessageBox.Show("A jest za długa");
+                    MessageBox.Show("A: nie podano lub jest za długa");
                 }
 
-                string eliminationB = addEliminationWindow.euiA.Text;
+                string eliminationB = addEliminationWindow.euiB.Text;
                 if (eliminationB.Length < 50 && eliminationB.Length > 0)
                 {
                     _drawing.EliminationB = eliminationB;
                 }
                 else
                 {
-                    MessageBox.Show("B jest za długa");
+                    MessageBox.Show("B: nie podano lub jest za długa");
                 }
 
                 string eliminationCondition = addEliminationWindow.euiCondition.Text;
@@ -130,24 +133,25 @@ namespace ZamianaUnitermu
                 }
                 else
                 {
-                    MessageBox.Show("Warunek jest za długi");
+                    MessageBox.Show("Warunek: nie podano lub jest za długi");
                 }
 
-                _drawing.EliminationOperation = addEliminationWindow.euiOperation.SelectedItem.ToString();
+                _drawing.EliminationOperation = addEliminationWindow.euiOperation.Text;
+
+                UpdateCanvas(sender,e);
             }
         }
 
-        private void DrawBlueCanvas(object sender, RoutedEventArgs e)
+
+        private void Clear(object sender, RoutedEventArgs e)
         {
             uiCanvas.Children.Remove(_drawing);
-
-            _drawing.Update();
-            uiCanvas.Children.Add(_drawing);
-        }
-
-        private void ClearCanvas(object sender, RoutedEventArgs e)
-        {
-            uiCanvas.Children.Remove(_drawing);
+            _drawing.CycleVariable = "";
+            _drawing.CycleOperation = "";
+            _drawing.EliminationA = "";
+            _drawing.EliminationB = "";
+            _drawing.EliminationCondition = "";
+            _drawing.EliminationOperation = "";
             _drawing.Clear();
             uiCanvas.Children.Add(_drawing);
 

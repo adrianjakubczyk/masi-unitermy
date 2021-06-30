@@ -13,12 +13,12 @@ namespace ZamianaUnitermu
         private double _width;
         private double _height;
 
-        public String CycleVariable { get; set; }
-        public String CycleOperation { get; set; }
-        public String EliminationA { get; set; }
-        public String EliminationB { get; set; }
-        public String EliminationCondition { get; set; }
-        public String EliminationOperation { get; set; }
+        public string CycleVariable { get; set; }
+        public string CycleOperation { get; set; }
+        public string EliminationA { get; set; }
+        public string EliminationB { get; set; }
+        public string EliminationCondition { get; set; }
+        public string EliminationOperation { get; set; }
 
         public bool Exchanged { get; set; }
 
@@ -31,6 +31,14 @@ namespace ZamianaUnitermu
         {
             _width = width;
             _height = height;
+            CycleVariable = "";
+            CycleOperation = "";
+            EliminationA = "";
+            EliminationB = "";
+            EliminationCondition = "";
+            EliminationOperation = "";
+
+
 
             Visual = new DrawingVisual();
 
@@ -43,19 +51,49 @@ namespace ZamianaUnitermu
 
                 ClearDrawingContext(dc);
 
-                double margin = FontSize/3;
+                //double margin = FontSize/3;
+                double margin = 50;
                 double origin = margin + FontSize;
                 double radiusX = FontSize * 2 / 3;
                 double radiusY = (FontSize + 2) * 3 / 4;
-                Pen pen = new Pen(Brushes.Black, 2);
-                dc.DrawEllipse(Brushes.White, pen, new Point(origin, origin), radiusX, radiusY);
-                dc.DrawLine(pen, new Point(origin+radiusX,origin-radiusY), new Point(origin - radiusX, origin+radiusY));
-                string text = CycleVariable + "  ";
-                if (!Exchanged)
+                Pen pen = new Pen(Brushes.Black, FontSize / 6);
+                string textCycle = CycleVariable + "  ";
+
+                if (CycleVariable.Length > 0 && CycleOperation.Length > 0)
                 {
-                    text += CycleOperation;
+                    dc.DrawEllipse(Brushes.White, pen, new Point(origin, origin), radiusX, radiusY);
+                    dc.DrawLine(pen, new Point(origin + radiusX, origin - radiusY), new Point(origin - radiusX, origin + radiusY));
+                    if (!Exchanged)
+                    {
+                        textCycle += CycleOperation;
+                    }
+                    dc.DrawText(GetFormattedText(textCycle), new Point(origin + radiusX * 2, origin - GetFormattedText(textCycle).Height / 2));
+
                 }
-                dc.DrawText(GetFormattedText(CycleVariable+" "+CycleOperation), new Point(origin+radiusX+margin, origin/2));
+
+
+                if (EliminationA.Length > 0 && EliminationB.Length > 0 && EliminationCondition.Length > 0 && EliminationOperation.Length > 0)
+                {
+                    double originX = origin - radiusX;
+                    double originY = origin + radiusY * 4;
+                    double verticalLineSize = FontSize / 3;
+                    double innerMargin = verticalLineSize * 2;
+                    string textElimination = EliminationA + EliminationOperation + " " + EliminationB + EliminationOperation + " " + EliminationCondition;
+                    if (Exchanged)
+                    {
+                        originX = origin + radiusX * 3 + GetFormattedText(textCycle).Width;
+                        //originY = origin - verticalLineSize*2 - GetFormattedText(textElimination).Height / 4;
+                        originY = origin - GetFormattedText(textCycle).Height / 2;
+                        textElimination += "_" + CycleVariable;
+                    }
+                    textElimination += " - ?";
+                    FormattedText formattedTextElimination = GetFormattedText(textElimination);
+                    dc.DrawLine(pen, new Point(originX, originY - formattedTextElimination.Height / 4), new Point(originX + formattedTextElimination.Width + innerMargin * 2, originY - formattedTextElimination.Height / 4));
+                    dc.DrawLine(pen, new Point(originX, originY - formattedTextElimination.Height / 4 - verticalLineSize), new Point(originX, originY - formattedTextElimination.Height / 4 + verticalLineSize));
+                    dc.DrawLine(pen, new Point(originX + formattedTextElimination.Width + innerMargin * 2, originY - formattedTextElimination.Height / 4 - verticalLineSize), new Point(originX + formattedTextElimination.Width + innerMargin * 2, originY - formattedTextElimination.Height / 4 + verticalLineSize));
+                    dc.DrawText(formattedTextElimination, new Point(originX + innerMargin, originY));
+
+                }
 
                 dc.Close();
             }
