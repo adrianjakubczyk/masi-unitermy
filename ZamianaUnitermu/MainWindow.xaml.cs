@@ -52,10 +52,6 @@ namespace ZamianaUnitermu
             RefreshUnitermsList();
 
             
-            //modified = false;
-            //nowy = false;
-            //lbUniterms.SelectionChanged += ehlbUNitermsSelectionChanged;
-            
             _drawing = new Drawing(uiCanvas.ActualWidth, uiCanvas.ActualHeight);
             _drawing.FontFamily = new FontFamily(uiFontFamily.SelectedItem.ToString());
             _drawing.FontSize = Int32.Parse(uiFontSize.SelectedItem.ToString());

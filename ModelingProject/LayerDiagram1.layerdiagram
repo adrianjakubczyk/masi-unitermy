@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="bd3800f9-a942-44df-8884-4e9ef0075bdf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="34829170-2143-4ad1-9299-5eb8901598b3" name="ZamianaUnitermu">
+      <childLayers>
+        <layer Id="1f72223a-5ab8-46f5-b481-20c2e80f9654" name="MainWindow">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="193fda29-15c8-44c6-ae2f-b39214ce7d0c" direction="Forward">
+              <layerMoniker Id="b0ff57e4-ddf6-40fd-994a-c636c35fd34a" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="ad71976d-7e7a-4b8f-ae7f-607ba1660c71" direction="Forward">
+              <layerMoniker Id="8eeed1e6-ef43-492d-b68a-8f4b13042b80" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="63b50da3-4dda-46e1-8c9a-90f2fa5e31a7" direction="Forward">
+              <layerMoniker Id="6eaec5eb-cec9-4e6b-8c78-71c65f794a8b" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="bacab1c5-d797-4ffa-ba72-3a7dad90a1ec" direction="Forward">
+              <layerMoniker Id="c98e0968-8f07-4714-b146-5539af984113" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="543dc6bf-6595-450c-88ed-a95da68c6d91" name="MainWindow">
+              <ArtifactNode Label="MainWindow" Category="CodeSchema_Class" Id="(Assembly=../ZamianaUnitermu/bin/Debug/ZamianaUnitermu.exe Namespace=ZamianaUnitermu Type=MainWindow)" />
+              <ExpandedNode Id="(Assembly=ZamianaUnitermu Namespace=ZamianaUnitermu Type=MainWindow)" Label="MainWindow" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="b0ff57e4-ddf6-40fd-994a-c636c35fd34a" name="Drawing">
+          <references>
+            <reference Id="7043eb5e-75e6-4c10-9aaa-3f2c2e77140a" name="Drawing">
+              <ArtifactNode Label="Drawing" Category="CodeSchema_Class" Id="(Assembly=../ZamianaUnitermu/bin/Debug/ZamianaUnitermu.exe Namespace=ZamianaUnitermu Type=Drawing)" />
+              <ExpandedNode Id="(Assembly=ZamianaUnitermu Namespace=ZamianaUnitermu Type=Drawing)" Label="Drawing" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="8eeed1e6-ef43-492d-b68a-8f4b13042b80" name="Database">
+          <references>
+            <reference Id="61875c86-ad1d-4d83-8a43-3458ae749ffd" name="Database">
+              <ArtifactNode Label="Database" Category="CodeSchema_Class" Id="(Assembly=../ZamianaUnitermu/bin/Debug/ZamianaUnitermu.exe Namespace=ZamianaUnitermu Type=Database)" />
+              <ExpandedNode Id="(Assembly=ZamianaUnitermu Namespace=ZamianaUnitermu Type=Database)" Label="Database" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="6eaec5eb-cec9-4e6b-8c78-71c65f794a8b" name="AddElimination">
+          <references>
+            <reference Id="df8d46d7-cddf-46ed-a56d-0bac88fde440" name="AddElimination">
+              <ArtifactNode Label="AddElimination" Category="CodeSchema_Class" Id="(Assembly=../ZamianaUnitermu/bin/Debug/ZamianaUnitermu.exe Namespace=ZamianaUnitermu Type=AddElimination)" />
+              <ExpandedNode Id="(Assembly=ZamianaUnitermu Namespace=ZamianaUnitermu Type=AddElimination)" Label="AddElimination" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="c98e0968-8f07-4714-b146-5539af984113" name="AddCycle">
+          <references>
+            <reference Id="960620ce-2a19-4898-b702-93e21e749254" name="AddCycle">
+              <ArtifactNode Label="AddCycle" Category="CodeSchema_Class" Id="(Assembly=../ZamianaUnitermu/bin/Debug/ZamianaUnitermu.exe Namespace=ZamianaUnitermu Type=AddCycle)" />
+              <ExpandedNode Id="(Assembly=ZamianaUnitermu Namespace=ZamianaUnitermu Type=AddCycle)" Label="AddCycle" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="2f1f5494-b155-4637-ae32-1600f4630afb" name="App">
+          <references>
+            <reference Id="9d6a1f74-9ab4-49b7-b481-b68b042fce67" name="App">
+              <ArtifactNode Label="App" Category="CodeSchema_Class" Id="(Assembly=../ZamianaUnitermu/bin/Debug/ZamianaUnitermu.exe Namespace=ZamianaUnitermu Type=App)" />
+              <ExpandedNode Id="(Assembly=ZamianaUnitermu Namespace=ZamianaUnitermu Type=App)" Label="App" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="c615db31-96c1-4493-b5d7-713e8904bb63" name="ZamianaUnitermu">
+          <ArtifactNode Label="ZamianaUnitermu" Category="CodeSchema_Namespace" Id="(Namespace=ZamianaUnitermu)" />
+          <ExpandedNode Id="(Assembly=ZamianaUnitermu)" Label="ZamianaUnitermu.exe" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=ZamianaUnitermu)" Label="ZamianaUnitermu" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="898a44d1-f35d-4f6b-90b7-2ab2bf555c15" name="UMLUseCaseDiagram1" linkedPackageId="5a153afe-5e1e-4bdf-a665-5468f739ca5e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="589f5188-ea64-43b8-aa35-22bba4cce4b0">
+      <profileInstance Id="e8509154-994a-4749-ad49-1a7e4aebadcd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="eb2fd452-fac9-416d-8e21-3255d41642c8">
+      <profileInstance Id="462fb378-12a5-4f0b-82fd-dd20330844f9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f4d8b857-22a9-4f5a-bb6c-85ef18a3e397" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="35c559fb-bb0f-4eff-b957-32366707475f" />
+        <targetEnds>
+          <association Id="3876ef8a-d095-45d8-866a-abb6635c0312" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Create new Operation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="81dcb183-c400-4917-9999-b7f175754e57" LastKnownName="Create new Operation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1519208a-d4ab-4c38-aae6-8bfb0854e24a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1f6321e3-7a2c-409d-a5ea-16598311d6be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b35928ae-9934-4d20-97fa-04101d21364f" name="Create new Operation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fa69df6b-3463-4fa2-bced-0a5ae8bfdb47" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="85a1986b-bb60-44f9-a2a5-87fe179c59ff" />
+          </association>
+          <association Id="6947e08e-bfe3-4dd1-93aa-8f9c160e51a1" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Load operation from database" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bea8061a-222c-4d9d-8ac3-840a2b672639" LastKnownName="Load operation from database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c3fc20f-2d58-44b6-9fb7-210d15717ff9" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8ee2c572-690b-4704-b5fa-1f3cd4999b46" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0d72881-ae75-40a2-b425-fb22412673ef" name="Load operation from database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bc6247d9-b1b4-4b15-9949-8d5dc6ee6f2e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="446cb316-7d0c-4177-bb89-8c240dba1a53" />
+          </association>
+          <association Id="29a8dcfc-5831-4039-bf5b-b4d38ccdc596" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Exchange cyclic paralleling uniter for horizontal elimination uniterm" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2cdff6fc-2d08-4529-a207-0885984ce2d6" LastKnownName="Exchange cyclic paralleling uniter for horizontal elimination uniterm" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b75ab41-2942-494f-84c2-3650d0217ab2" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9d8c33a5-4570-47ef-be55-c9cda7fc8615" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4e9afcd-7a2c-42d6-af71-9b6dfc35e92b" name="Exchange cyclic paralleling uniter for horizontal elimination uniterm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f34484af-a793-4dfe-937e-a38d1adf8dc3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fbd01447-e50c-4c4b-8177-cd7e3c05061a" />
+          </association>
+          <association Id="efd606f5-7966-4baa-98d9-44c898075f04" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Change font family" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="63049053-dbb0-4f8a-b51c-5bcd1a309e2e" LastKnownName="Change font family" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d7a2fa2-8d1d-4f2e-b212-37102f7834ff" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4889cec4-3105-426c-b8e2-318f38df23fe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d6dd6c77-9de0-47b3-a09d-87b606c0fbad" name="Change font family" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="252502c8-fa7e-4005-a25d-a5e92f30a9ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8a273a0a-1574-4535-b5fb-ac07f5a9c82b" />
+          </association>
+          <association Id="a2d9f6a5-dec8-4ce1-b387-18c62bd81a11" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Change font size" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ff3d5da0-4c32-4adb-924a-90c43a9cad65" LastKnownName="Change font size" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6bc2d7e8-2584-4541-ba0c-575ef2039a1c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4e238ea6-df5c-4bea-a00e-c9daf341c08c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="819f20ce-85a6-4de3-9f72-3e834a3f7212" name="Change font size" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="db77bf9e-a8e7-4230-bcfb-a284eea64868" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4bfb6abb-6eaa-4a65-bd28-52790472794d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e5b7b5f8-7549-4792-b612-66d199c38838" name="Add horizontal cyclic paralleling uniterm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9343cfb9-e926-4566-beb2-50711aaec6d8" />
+        <extendedCases>
+          <extend Id="6e2b98b5-a65e-4ff4-8d95-e0bd888393c2">
+            <useCaseMoniker Id="81dcb183-c400-4917-9999-b7f175754e57" LastKnownName="Create new Operation" />
+            <elementDefinition Id="45c5e760-b2b9-461d-9092-1a10d386b67b" />
+          </extend>
+          <extend Id="d82977da-09ab-48df-92ae-079aba6c0b24">
+            <useCaseMoniker Id="bea8061a-222c-4d9d-8ac3-840a2b672639" LastKnownName="Load operation from database" />
+            <elementDefinition Id="3b2465de-d6aa-4fdc-8d0b-b8839358805b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="758c0dfc-eaf7-455a-9287-a7ab0d5b856e" name="Add horizontal elimination uniterm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="914f7365-be14-4277-8b52-10d52dd34675" />
+        <extendedCases>
+          <extend Id="5aed5213-9197-4ad4-9503-cccf82407805">
+            <useCaseMoniker Id="81dcb183-c400-4917-9999-b7f175754e57" LastKnownName="Create new Operation" />
+            <elementDefinition Id="28f34a7d-4875-42b4-8a8e-af837aeda394" />
+          </extend>
+          <extend Id="f6d29b38-5b42-46f6-9821-5c725f162fa8">
+            <useCaseMoniker Id="bea8061a-222c-4d9d-8ac3-840a2b672639" LastKnownName="Load operation from database" />
+            <elementDefinition Id="a8ee8cfb-30ae-4f3b-8e7b-f417dc06380f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2cdff6fc-2d08-4529-a207-0885984ce2d6" name="Exchange cyclic paralleling uniter for horizontal elimination uniterm" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="924ea267-dd3e-4b5c-bf30-ebbdbe96aac7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="558e8125-4422-45d9-b092-a2097077c5ad" name="Save operation in database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40182335-11c6-48ad-85ae-f154e97f2de1" />
+        <extendedCases>
+          <extend Id="96c0f456-e44d-45bd-9b33-5397a5fdbc44">
+            <useCaseMoniker Id="81dcb183-c400-4917-9999-b7f175754e57" LastKnownName="Create new Operation" />
+            <elementDefinition Id="3e8bed40-28a3-43a6-b1a3-d30bffbc8ecd" />
+          </extend>
+          <extend Id="df85e29d-3ba2-4937-8e47-bcc48e348a4a">
+            <useCaseMoniker Id="bea8061a-222c-4d9d-8ac3-840a2b672639" LastKnownName="Load operation from database" />
+            <elementDefinition Id="07ed43cf-0a46-4aa5-b908-90b1de3ae331" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1e0b3225-d486-496e-81cb-1a17219620e0" name="Delete operation from database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c6f4693a-680c-41b2-ae1b-f9156ab4a5f3" />
+        <extendedCases>
+          <extend Id="6416a8c6-b4e1-47db-9a9d-1e01320e2b3e">
+            <useCaseMoniker Id="bea8061a-222c-4d9d-8ac3-840a2b672639" LastKnownName="Load operation from database" />
+            <elementDefinition Id="23539bef-658e-4d45-8faa-0a01524f5b23" />
+          </extend>
+          <extend Id="4dfffc7d-3ded-4899-8059-caa31936c785">
+            <useCaseMoniker Id="558e8125-4422-45d9-b092-a2097077c5ad" LastKnownName="Save operation in database" />
+            <elementDefinition Id="58e626a9-18df-4d95-ada0-49142ca4f2db" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bea8061a-222c-4d9d-8ac3-840a2b672639" name="Load operation from database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="150c9abe-7414-41ca-ba61-2828b92b7525" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="81dcb183-c400-4917-9999-b7f175754e57" name="Create new Operation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b7dd9cf8-c1f1-49e7-a978-facf9963d231" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ff3d5da0-4c32-4adb-924a-90c43a9cad65" name="Change font size" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="254556b1-bd23-4892-8e1c-3013aa71495d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="63049053-dbb0-4f8a-b51c-5bcd1a309e2e" name="Change font family" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="888c1daf-53e2-4dcf-89b0-25c0d8d2d2f2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="421b2bee-3cb9-4098-9f74-a06c6f629a99" name="Change operation's name" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a8a340eb-66cb-43e9-97f6-684de5b0befc" />
+        <extendedCases>
+          <extend Id="968d023d-4a33-4c4e-ba11-e8abaca06370">
+            <useCaseMoniker Id="81dcb183-c400-4917-9999-b7f175754e57" LastKnownName="Create new Operation" />
+            <elementDefinition Id="9643d47b-d732-49c6-9f32-fc972d9e2c70" />
+          </extend>
+          <extend Id="37d075f5-58db-49ac-8ed6-d78df4ffbd37">
+            <useCaseMoniker Id="bea8061a-222c-4d9d-8ac3-840a2b672639" LastKnownName="Load operation from database" />
+            <elementDefinition Id="4f2178be-fdbb-41aa-b803-6a6f03ee4db1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="16b5a819-592f-4e42-8c77-5b5615da6799" name="Change operation's description" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd235e88-0747-47b4-8063-652618e84e67" />
+        <extendedCases>
+          <extend Id="71632732-08dc-44b9-add6-515c77ea5d49">
+            <useCaseMoniker Id="81dcb183-c400-4917-9999-b7f175754e57" LastKnownName="Create new Operation" />
+            <elementDefinition Id="673e319c-37a3-402c-bfcf-c8e1cb5fdda5" />
+          </extend>
+          <extend Id="f5f392e8-286f-4c14-af95-99570f1b7fe7">
+            <useCaseMoniker Id="bea8061a-222c-4d9d-8ac3-840a2b672639" LastKnownName="Load operation from database" />
+            <elementDefinition Id="92443c23-cfcc-42da-b345-8d008f453837" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="5a153afe-5e1e-4bdf-a665-5468f739ca5e" name="ModelingProject">
+    <elementDefinition Id="cff6e137-04a1-4079-8e8d-3b28735438a3" />
+  </package>
+</useCaseModelRoot>

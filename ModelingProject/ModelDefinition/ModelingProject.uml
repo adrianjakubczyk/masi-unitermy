@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="cff6e137-04a1-4079-8e8d-3b28735438a3"
+  name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="664d2173-f18d-4b0b-8038-329978c465d9">
+      <body>Is every input valid</body>
+    </comment>
+    <comment
+      Id="f0008fd3-8866-40b9-ac5c-e73740810963">
+      <body>Is every input valid</body>
+    </comment>
+    <comment
+      Id="a056fad6-62ed-4fc9-bb6a-54ec67ad3069">
+      <body>Yes</body>
+    </comment>
+    <comment
+      Id="71c40030-83ba-4202-9f8e-6ccd2f002f8a">
+      <body>No</body>
+    </comment>
+    <comment
+      Id="41c22efc-e96d-472f-82bd-d73782161dcf">
+      <body>Yes</body>
+    </comment>
+    <comment
+      Id="1820186f-b669-4b77-ab11-df256eee3af3">
+      <body>No</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="370efc05-fcd9-4094-86f2-0cd86730f659"
+        name="Drawing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="f7820166-8f31-4960-98ab-35cfc5abcda8"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <lifelines>
+          <lifeline
+            Id="e58e0c66-2970-4809-8d52-303c3ec39b91"
+            name="App"
+            isActor="false"
+            lifelineDisplayName="App" />
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="35c559fb-bb0f-4eff-b957-32366707475f"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="85a1986b-bb60-44f9-a2a5-87fe179c59ff"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Create new Operation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b7dd9cf8-c1f1-49e7-a978-facf9963d231"
+              LastKnownName="Create new Operation"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1f6321e3-7a2c-409d-a5ea-16598311d6be"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa69df6b-3463-4fa2-bced-0a5ae8bfdb47"
+                  name="Create new Operation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="446cb316-7d0c-4177-bb89-8c240dba1a53"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Load operation from database"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="150c9abe-7414-41ca-ba61-2828b92b7525"
+              LastKnownName="Load operation from database"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ee2c572-690b-4704-b5fa-1f3cd4999b46"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc6247d9-b1b4-4b15-9949-8d5dc6ee6f2e"
+                  name="Load operation from database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fbd01447-e50c-4c4b-8177-cd7e3c05061a"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Exchange cyclic paralleling uniter for horizontal elimination uniterm"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="924ea267-dd3e-4b5c-bf30-ebbdbe96aac7"
+              LastKnownName="Exchange cyclic paralleling uniter for horizontal elimination uniterm"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d8c33a5-4570-47ef-be55-c9cda7fc8615"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f34484af-a793-4dfe-937e-a38d1adf8dc3"
+                  name="Exchange cyclic paralleling uniter for horizontal elimination uniterm"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8a273a0a-1574-4535-b5fb-ac07f5a9c82b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Change font family"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="888c1daf-53e2-4dcf-89b0-25c0d8d2d2f2"
+              LastKnownName="Change font family"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4889cec4-3105-426c-b8e2-318f38df23fe"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="252502c8-fa7e-4005-a25d-a5e92f30a9ba"
+                  name="Change font family"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4bfb6abb-6eaa-4a65-bd28-52790472794d"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Change font size"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="254556b1-bd23-4892-8e1c-3013aa71495d"
+              LastKnownName="Change font size"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e238ea6-df5c-4bea-a00e-c9daf341c08c"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="db77bf9e-a8e7-4230-bcfb-a284eea64868"
+                  name="Change font size"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9343cfb9-e926-4566-beb2-50711aaec6d8"
+        name="Add horizontal cyclic paralleling uniterm"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="45c5e760-b2b9-461d-9092-1a10d386b67b">
+            <useCaseMoniker
+              Id="b7dd9cf8-c1f1-49e7-a978-facf9963d231"
+              LastKnownName="Create new Operation"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+          <extend
+            Id="3b2465de-d6aa-4fdc-8d0b-b8839358805b">
+            <useCaseMoniker
+              Id="150c9abe-7414-41ca-ba61-2828b92b7525"
+              LastKnownName="Load operation from database"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="914f7365-be14-4277-8b52-10d52dd34675"
+        name="Add horizontal elimination uniterm"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="28f34a7d-4875-42b4-8a8e-af837aeda394">
+            <useCaseMoniker
+              Id="b7dd9cf8-c1f1-49e7-a978-facf9963d231"
+              LastKnownName="Create new Operation"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+          <extend
+            Id="a8ee8cfb-30ae-4f3b-8e7b-f417dc06380f">
+            <useCaseMoniker
+              Id="150c9abe-7414-41ca-ba61-2828b92b7525"
+              LastKnownName="Load operation from database"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="924ea267-dd3e-4b5c-bf30-ebbdbe96aac7"
+        name="Exchange cyclic paralleling uniter for horizontal elimination uniterm"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="40182335-11c6-48ad-85ae-f154e97f2de1"
+        name="Save operation in database"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="3e8bed40-28a3-43a6-b1a3-d30bffbc8ecd">
+            <useCaseMoniker
+              Id="b7dd9cf8-c1f1-49e7-a978-facf9963d231"
+              LastKnownName="Create new Operation"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+          <extend
+            Id="07ed43cf-0a46-4aa5-b908-90b1de3ae331">
+            <useCaseMoniker
+              Id="150c9abe-7414-41ca-ba61-2828b92b7525"
+              LastKnownName="Load operation from database"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c6f4693a-680c-41b2-ae1b-f9156ab4a5f3"
+        name="Delete operation from database"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="23539bef-658e-4d45-8faa-0a01524f5b23">
+            <useCaseMoniker
+              Id="150c9abe-7414-41ca-ba61-2828b92b7525"
+              LastKnownName="Load operation from database"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+          <extend
+            Id="58e626a9-18df-4d95-ada0-49142ca4f2db">
+            <useCaseMoniker
+              Id="40182335-11c6-48ad-85ae-f154e97f2de1"
+              LastKnownName="Save operation in database"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="150c9abe-7414-41ca-ba61-2828b92b7525"
+        name="Load operation from database"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b7dd9cf8-c1f1-49e7-a978-facf9963d231"
+        name="Create new Operation"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="254556b1-bd23-4892-8e1c-3013aa71495d"
+        name="Change font size"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="888c1daf-53e2-4dcf-89b0-25c0d8d2d2f2"
+        name="Change font family"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a8a340eb-66cb-43e9-97f6-684de5b0befc"
+        name="Change operation's name"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9643d47b-d732-49c6-9f32-fc972d9e2c70">
+            <useCaseMoniker
+              Id="b7dd9cf8-c1f1-49e7-a978-facf9963d231"
+              LastKnownName="Create new Operation"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+          <extend
+            Id="4f2178be-fdbb-41aa-b803-6a6f03ee4db1">
+            <useCaseMoniker
+              Id="150c9abe-7414-41ca-ba61-2828b92b7525"
+              LastKnownName="Load operation from database"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fd235e88-0747-47b4-8063-652618e84e67"
+        name="Change operation's description"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="673e319c-37a3-402c-bfcf-c8e1cb5fdda5">
+            <useCaseMoniker
+              Id="b7dd9cf8-c1f1-49e7-a978-facf9963d231"
+              LastKnownName="Create new Operation"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+          <extend
+            Id="92443c23-cfcc-42da-b345-8d008f453837">
+            <useCaseMoniker
+              Id="150c9abe-7414-41ca-ba61-2828b92b7525"
+              LastKnownName="Load operation from database"
+              LastKnownLocation="ModelingProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="ccd604b8-439e-4369-81e1-676a324915d3"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="a9147255-529e-4605-bbe3-18fbfa57cba3"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="856d3ea6-3113-49f9-a9fc-900039e208ea"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f6d8d708-0f9e-472d-871f-3658fed53823"
+                  LastKnownName="Add cyclic paralleling uniterm"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="a919ce87-eaa1-43aa-a1d8-f1315a84e1d5"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="f6d8d708-0f9e-472d-871f-3658fed53823"
+            name="Add cyclic paralleling uniterm"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f5acc616-a5c6-45a4-92ae-b8e818daec1e"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="e25a11ee-7e20-4049-9af5-70e78f7a32eb"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6ed7a400-7fb0-4999-aa33-d68725d36b68"
+            name="Add elimination uniterm"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3b8c7e6e-f236-4d0b-ab29-b024382ea470"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="9f9d9801-ab51-41eb-b211-c597764b2d62"
+                  LastKnownName="Decision11"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="e25a11ee-7e20-4049-9af5-70e78f7a32eb"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="21e5d456-c12c-485d-8a90-bfe3f7271fc3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6ed7a400-7fb0-4999-aa33-d68725d36b68"
+                  LastKnownName="Add elimination uniterm"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0f3a567d-0aaf-4a97-81a5-5f55c935096e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c2e613f3-2496-4616-a095-941a9563af0e"
+                  LastKnownName="Show error message"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="c2e613f3-2496-4616-a095-941a9563af0e"
+            name="Show error message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b706c5ef-4e07-4145-8bf7-e63303f01392"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f6d8d708-0f9e-472d-871f-3658fed53823"
+                  LastKnownName="Add cyclic paralleling uniterm"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="9f9d9801-ab51-41eb-b211-c597764b2d62"
+            name="Decision11"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="376a0c4e-968c-4b19-bcbf-29a9e9216c49"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c6616590-9d82-44f6-a905-d01e1f13c85c"
+                  LastKnownName="Input name and description"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d30e62a1-f3ac-43f3-b9be-666d0b6d8a1a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f6b44b84-6402-4c29-a9a4-d3e3b696dcf4"
+                  LastKnownName="Show error message"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="f6b44b84-6402-4c29-a9a4-d3e3b696dcf4"
+            name="Show error message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8ec75db3-7e16-4cee-8a22-83b80f9b56bf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6ed7a400-7fb0-4999-aa33-d68725d36b68"
+                  LastKnownName="Add elimination uniterm"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c6616590-9d82-44f6-a905-d01e1f13c85c"
+            name="Input name and description"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b754d955-5d54-4f29-bef9-bf9a3733f85e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f090efac-904e-4bd8-9543-c7a474bf1ad0"
+                  LastKnownName="Save in database"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f090efac-904e-4bd8-9543-c7a474bf1ad0"
+            name="Save in database"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="785d9b6e-ff91-4217-a102-852f8f16479e"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a919ce87-eaa1-43aa-a1d8-f1315a84e1d5"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="4f8c4fe7-9ede-4982-987b-78c3b06abb32"
+        name="GUI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="9659f3ba-5e9f-471a-b9b4-8e4d1521a2b2">
+            <componentMoniker
+              Id="3642d668-ded4-477a-a680-d2f1fb2c0894"
+              LastKnownName="Database"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="bdbb02b2-6598-4b05-b270-043c1c292706"
+            name="Drawing"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="792ff29f-8fe3-4f21-a547-868276701179"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="07035a8a-3cc6-4116-a27c-c1423d6c17fa"
+                  LastKnownName="MainWindow"
+                  LastKnownLocation="ModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="c169e768-0825-43af-a5c0-078d10d7597e" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="afd519d5-23f1-4d5b-8f87-3a6073a0940d" />
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="d2c248a0-2beb-452b-9622-d1036ebb91b9"
+                LastKnownName="Component1"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="07035a8a-3cc6-4116-a27c-c1423d6c17fa"
+            name="MainWindow"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="f4b8941b-ac15-4862-818e-7ac7eef8d619"
+                LastKnownName="Component2"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="4fa9d9dd-abba-44c8-94ac-9af00edb2a67"
+            name="AddCycle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="5ae132fd-6d5e-436d-837c-f13d14d71a95"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="07035a8a-3cc6-4116-a27c-c1423d6c17fa"
+                  LastKnownName="MainWindow"
+                  LastKnownLocation="ModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="94450e02-2ec7-43bf-baf8-b4fa7ba44224" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="23334161-e921-4a54-b583-e2edddf8c6be" />
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="62802582-e1b7-4d8d-9a09-e81fdd20808c"
+                LastKnownName="Component3"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="9027c1eb-f378-4c97-8dbc-b1bc4dbfc7f6"
+            name="AddElimination"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="3ce8de92-07c0-433a-bd92-da46690587ff"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="07035a8a-3cc6-4116-a27c-c1423d6c17fa"
+                  LastKnownName="MainWindow"
+                  LastKnownLocation="ModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="c2c99846-88a7-41f8-80f3-df438f31f9a8" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="7e2f01e7-ee1c-4438-8ebe-0eac4cdff322" />
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="f4db24fb-1294-4593-aaf2-3d9def727839"
+                LastKnownName="Component4"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d2c248a0-2beb-452b-9622-d1036ebb91b9"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f4b8941b-ac15-4862-818e-7ac7eef8d619"
+        name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="62802582-e1b7-4d8d-9a09-e81fdd20808c"
+        name="Component3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f4db24fb-1294-4593-aaf2-3d9def727839"
+        name="Component4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3642d668-ded4-477a-a680-d2f1fb2c0894"
+        name="Database"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

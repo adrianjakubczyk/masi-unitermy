@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="1f3e3c92-9608-40ac-8899-80ed615ede6f" name="Activity1" linkedPackageId="798db4c9-29c9-4e35-a0f7-d9b43b81a4af" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="970dfed9-eceb-49ed-a6a1-638a19d8f13e">
+      <elementDefinition Id="664d2173-f18d-4b0b-8038-329978c465d9" />
+      <body>Is every input valid</body>
+    </comment>
+    <comment Id="c5e9025d-c0fe-448d-a5ec-f05d86786561">
+      <elementDefinition Id="f0008fd3-8866-40b9-ac5c-e73740810963" />
+      <body>Is every input valid</body>
+    </comment>
+    <comment Id="0b2e6279-af2e-4499-b1d7-a38ec128834e">
+      <elementDefinition Id="a056fad6-62ed-4fc9-bb6a-54ec67ad3069" />
+      <body>Yes</body>
+    </comment>
+    <comment Id="d64e9ee4-1a86-416c-ad88-6339a4f6ca4c">
+      <elementDefinition Id="71c40030-83ba-4202-9f8e-6ccd2f002f8a" />
+      <body>No</body>
+    </comment>
+    <comment Id="f8d4ed9f-2851-411f-a061-9132e09d61c9">
+      <elementDefinition Id="41c22efc-e96d-472f-82bd-d73782161dcf" />
+      <body>Yes</body>
+    </comment>
+    <comment Id="2ce70695-d8e6-484b-8767-25a39feec812">
+      <elementDefinition Id="1820186f-b669-4b77-ab11-df256eee3af3" />
+      <body>No</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="af071643-87f4-4161-9f38-c07918f36559">
+      <profileInstance Id="8d598695-8aec-40d5-be6f-a0b560df7ba1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c607b335-5014-47c9-a9af-171d782166e0">
+      <profileInstance Id="434a7fe3-ced2-43fc-a626-c1dab0dde6e0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="e3b95ec7-be70-41bb-a3b9-f77ea1df03a2" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ccd604b8-439e-4369-81e1-676a324915d3" />
+        <nodes>
+          <initialNode Id="c9a2a58d-8903-4ec1-8deb-72fb2f55b278" name="Initial1" isLeaf="false">
+            <elementDefinition Id="a9147255-529e-4605-bbe3-18fbfa57cba3" />
+            <flowNodeTargets>
+              <controlFlow Id="120ed148-72ac-4485-852f-1cab7c74da1d" isLeaf="false">
+                <opaqueActionMoniker Id="39572724-ec91-42c1-ba7b-2fad2fe5e19b" LastKnownName="Add cyclic paralleling uniterm" />
+                <elementDefinition Id="856d3ea6-3113-49f9-a9fc-900039e208ea" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="eb1dfac6-9ec8-42c7-b877-c5ff0d6534cd" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a919ce87-eaa1-43aa-a1d8-f1315a84e1d5" />
+          </activityFinalNode>
+          <opaqueAction Id="39572724-ec91-42c1-ba7b-2fad2fe5e19b" name="Add cyclic paralleling uniterm" isLeaf="false">
+            <elementDefinition Id="f6d8d708-0f9e-472d-871f-3658fed53823" />
+            <flowNodeTargets>
+              <controlFlow Id="33785ca3-3703-430d-8229-cb18dd3f6013" isLeaf="false">
+                <decisionNodeMoniker Id="a1ec9a24-0a3d-42b6-b1eb-9ebb28eb6053" LastKnownName="Decision1" />
+                <elementDefinition Id="f5acc616-a5c6-45a4-92ae-b8e818daec1e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b2ce9504-73b9-4a8c-851d-2a6b6600ae60" name="Add elimination uniterm" isLeaf="false">
+            <elementDefinition Id="6ed7a400-7fb0-4999-aa33-d68725d36b68" />
+            <flowNodeTargets>
+              <controlFlow Id="f5c31be2-96d4-497f-94d4-ed3ab8a19be3" isLeaf="false">
+                <decisionNodeMoniker Id="2a87b0bc-386f-4ccb-ba2c-4866bb2a06a2" LastKnownName="Decision11" />
+                <elementDefinition Id="3b8c7e6e-f236-4d0b-ab29-b024382ea470" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="a1ec9a24-0a3d-42b6-b1eb-9ebb28eb6053" name="Decision1" isLeaf="false">
+            <elementDefinition Id="e25a11ee-7e20-4049-9af5-70e78f7a32eb" />
+            <flowNodeTargets>
+              <controlFlow Id="d723b54d-2c11-4f0a-87de-bb15e6080d5b" isLeaf="false">
+                <opaqueActionMoniker Id="b2ce9504-73b9-4a8c-851d-2a6b6600ae60" LastKnownName="Add elimination uniterm" />
+                <elementDefinition Id="21e5d456-c12c-485d-8a90-bfe3f7271fc3" />
+              </controlFlow>
+              <controlFlow Id="851a93e9-3cda-4440-8d11-1d5079b60096" isLeaf="false">
+                <opaqueActionMoniker Id="fc07af71-a005-4f07-ad26-730c38bebce2" LastKnownName="Show error message" />
+                <elementDefinition Id="0f3a567d-0aaf-4a97-81a5-5f55c935096e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="fc07af71-a005-4f07-ad26-730c38bebce2" name="Show error message" isLeaf="false">
+            <elementDefinition Id="c2e613f3-2496-4616-a095-941a9563af0e" />
+            <flowNodeTargets>
+              <controlFlow Id="38d38fcb-0415-4273-842d-66b9186cc072" isLeaf="false">
+                <opaqueActionMoniker Id="39572724-ec91-42c1-ba7b-2fad2fe5e19b" LastKnownName="Add cyclic paralleling uniterm" />
+                <elementDefinition Id="b706c5ef-4e07-4145-8bf7-e63303f01392" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="2a87b0bc-386f-4ccb-ba2c-4866bb2a06a2" name="Decision11" isLeaf="false">
+            <elementDefinition Id="9f9d9801-ab51-41eb-b211-c597764b2d62" />
+            <flowNodeTargets>
+              <controlFlow Id="d4e6daa0-845a-4ba5-8633-f212501b2c2d" isLeaf="false">
+                <opaqueActionMoniker Id="cbcf814e-0f8e-415c-bc61-3edd045f11d9" LastKnownName="Input name and description" />
+                <elementDefinition Id="376a0c4e-968c-4b19-bcbf-29a9e9216c49" />
+              </controlFlow>
+              <controlFlow Id="27273013-ae62-4f70-9bb3-358a5eeccc03" isLeaf="false">
+                <opaqueActionMoniker Id="0d8ffa4b-2d6f-4526-9812-04d51cc14541" LastKnownName="Show error message" />
+                <elementDefinition Id="d30e62a1-f3ac-43f3-b9be-666d0b6d8a1a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="0d8ffa4b-2d6f-4526-9812-04d51cc14541" name="Show error message" isLeaf="false">
+            <elementDefinition Id="f6b44b84-6402-4c29-a9a4-d3e3b696dcf4" />
+            <flowNodeTargets>
+              <controlFlow Id="5e884431-3f8a-45e8-9a72-20abb347c834" isLeaf="false">
+                <opaqueActionMoniker Id="b2ce9504-73b9-4a8c-851d-2a6b6600ae60" LastKnownName="Add elimination uniterm" />
+                <elementDefinition Id="8ec75db3-7e16-4cee-8a22-83b80f9b56bf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cbcf814e-0f8e-415c-bc61-3edd045f11d9" name="Input name and description" isLeaf="false">
+            <elementDefinition Id="c6616590-9d82-44f6-a905-d01e1f13c85c" />
+            <flowNodeTargets>
+              <controlFlow Id="21c1dfb2-b840-482e-809e-ddc3eb85d4f4" isLeaf="false">
+                <opaqueActionMoniker Id="d971ad85-7916-4b70-b596-a5c19ad580f0" LastKnownName="Save in database" />
+                <elementDefinition Id="b754d955-5d54-4f29-bef9-bf9a3733f85e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d971ad85-7916-4b70-b596-a5c19ad580f0" name="Save in database" isLeaf="false">
+            <elementDefinition Id="f090efac-904e-4bd8-9543-c7a474bf1ad0" />
+            <flowNodeTargets>
+              <controlFlow Id="d38b0fec-5e53-44b1-83eb-40c7d5e161bb" isLeaf="false">
+                <activityFinalNodeMoniker Id="eb1dfac6-9ec8-42c7-b877-c5ff0d6534cd" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="785d9b6e-ff91-4217-a102-852f8f16479e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="798db4c9-29c9-4e35-a0f7-d9b43b81a4af" name="ModelingProject">
+    <elementDefinition Id="cff6e137-04a1-4079-8e8d-3b28735438a3" />
+  </package>
+</activityRootModel>
